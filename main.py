@@ -6,7 +6,7 @@ SCREEN_H = 600
 screen = pygame.display.set_mode((SCREEN_W,SCREEN_H))
 
 pygame.display.set_caption("Игра ТИР")
-icon = pygame.image.load("")
+icon = pygame.image.load("stock.jpg")
 running = True
 while running:
     pass
