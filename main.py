@@ -18,8 +18,15 @@ target_height = 50
 target_x = random.randint(0, SCREEN_W - target_width)
 target_y = random.randint(0, SCREEN_H - target_height)
 
+color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
 running = True
 while running:
-    pass
+    screen.fill(color)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    screen.blit(target_img, (target_x, target_y))
+    pygame.display.update()
 
 pygame.quit()
